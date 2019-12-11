@@ -1,0 +1,27 @@
+
+.navBar {
+    height: auto;
+    background-color: blueviolet;
+    width: 100%;
+    padding: 4rem 5rem;
+    font-size: 2rem;
+    
+}
+
+.container {
+    width: 80%;
+    margin: 3rem auto;
+}
+
+#headShot {
+    float: left;
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+    margin-right: 25px;
+
+}
+    
+
+
+

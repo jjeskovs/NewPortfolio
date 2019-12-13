@@ -1,104 +1,175 @@
 * {
-    box-sizing: border-box;
-}
-.navBar {
-    height: auto;
-    background-color: blueviolet;
-    width: 100%;
-    padding: 4rem 5rem;
- 
-        
-}
-.navBar p {
-    font-size: 2rem;
-    /* font-family: 'Pacifico', cursive; */
-    font-family: 'Permanent Marker', cursive;
-
-
-}
-.navBar ul {
-    float: right;
-    margin: 0;
-    padding-right: 3rem;
-    font-size: 1rem;
-    /* font-family: 'Pacifico', cursive; */
-    font-family: 'Pacifico', cursive;
+  box-sizing: border-box;
 }
 
-.navBar ul li {
-    display: inline-block;
-    padding: 0rem 1rem;
-}
-.sources {
+/* @media (min-width: 1440px) {
+  .my-work {
     display: flex;
-}
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 
-#logo {
-    height: 4rem;
-    border-radius: 20%;
-    float: right;
-}
+  .list-skills {
+    width: 100%;
+    background-color: rgb(41, 1, 1);
+    display: flex;
 
-.container {
-    width: 80%;
-    margin: 3rem auto;
-}
-
-.about {
+    /* align-items: center; */
+  /* } */
+  /* .skills-logo {
+    box-sizing: border-box;
+    width: 1%;
+    margin: 2rem 3.5rem;
+    flex: 1;
+    justify-content: space-between;
+  }
+  .about {
+    display: flex;
     margin: 1rem 0;
     padding: 1rem;
     background-color: blanchedalmond;
     height: 100%;
-    display: flex;
     width: 100%;
     line-height: 1.5rem;
     font-size: 16px;
     text-align: justify;
-    font-family: 'Times New Roman', Times, serif;
-}
-#headShot {
-    /* float: left; */
-    width: 25%;
-    height: auto;
+    font-family: "Times New Roman", Times, serif;
+  }
+  #headShot {
+    width: 250px;
     margin-right: 25px;
     border-radius: 2%;
+  }
 
-}
-    
-.list-skills { 
+  .about p {
+    flex: 5;
+  }
+} */
+
+@media (min-width: 1024px) {
+  .container {
+    width: 80%;
+    margin: 3rem auto;
+  }
+  .sources {
+    display: flex;
+  }
+  .projects {
+    background-color: violet;
+    box-sizing: border-box;
+    flex-basis: 30%;
+    margin-bottom: 1rem;
+  }
+
+  #logo {
+    height: 4rem;
+    border-radius: 20%;
+    float: right;
+  }
+  .navBar {
+    display: flex;
+    height: auto;
+    background-color: blueviolet;
     width: 100%;
-    background-color: rgb(41, 1, 1);
+    padding: 4rem 5rem;
+    justify-content: flex-end;
+  }
+  .navBar p {
+    order: 1;
+    font-size: 2rem;
+    margin-right: auto;
+    margin-top: 1rem;
+    font-family: "Permanent Marker", cursive;
+  }
+  .navBar img {
+    order: 3;
+  }
+  .navBar ul {
+    order: 2;
+    margin: 0;
+    padding-right: 3rem;
+    font-size: 1rem;
+    font-family: "Pacifico", cursive;
+  }
+
+  .navBar ul li {
+    margin-top: 1.5rem;
+    display: inline-block;
+    padding: 0rem 1rem;
+  }
+
+  .about {
     display: flex;
     
-    /* align-items: center; */
-    
-}
-.skills-logo {
-    height: 2rem;
-    margin: 2rem 3.5rem;
-    ;
-    
-    /* align-items: center; */
-    
-    
-    
+  }
+  #headShot {
+    width: 15rem;
+    border-radius: 2%;
+    margin-right: 1rem;
+  }
+
+  .about p {
+      line-height: 1.4em;
+      word-spacing: 0.2em;
+      font-family: serif;
+      text-align: justify;
+  }
 }
 
-.my-work {
+/* @media (min-width: 768px) {
+  .my-work {
+    margin: 1rem 1rem;
+  }
+  .list-skills {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(41, 1, 1);
+    margin-bottom: 1rem;
+  }
+  .skills-logo {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px;
+  }
 
-
+  .about {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .about p {
+    margin: 1rem 2rem;
+  }
+  #headShot {
+    border-radius: 2%;
+  }
 }
 
-.projects {
-    background-color: violet;
-    width: 250px;
-    height: 150px;
-    margin-left: 6%;
-    margin-bottom: 6%;
-    
-}
+@media (min-width: 320px) {
+  .container {
+    width: 100%;
+    margin: 3rem auto;
+  }
+  #headShot {
+    width: 150px;
+    border-radius: 2%;
+    margin-left: 118px;
+    margin-right: auto; */
+  }
 
+.skills-logo {
+    width: 75px;
+    margin-left: 25px;
+    margin-right: auto;
+  }
+  .about p {
+    /* text-align: center; */
+    margin-left: auto;
+    margin-right: auto;
+  }
+} */

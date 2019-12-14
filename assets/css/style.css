@@ -1,8 +1,17 @@
 * {
   box-sizing: border-box;
+  
 }
- #toggle {display: none;}
+#toggle {
+  display: none;
+}
 
+.navBar {
+  background: url("../img/nav-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 /* @media (min-width: 1440px) {
 
 
@@ -12,8 +21,8 @@
     display: flex;
 
     /* align-items: center; */
-  /* } */
-  /* .skills-logo {
+/* } */
+/* .skills-logo {
     box-sizing: border-box;
     width: 1%;
     margin: 2rem 3.5rem;
@@ -66,11 +75,11 @@
   .navBar {
     display: flex;
     height: auto;
-    background-color: blueviolet;
+    background: #212121;
+    color: #fff;
     width: 100%;
     padding: 4rem 5rem;
     justify-content: flex-end;
-    text-decoration: none;
   }
   .navBar p {
     order: 1;
@@ -96,6 +105,8 @@
     display: inline-block;
     padding: 0rem 1rem;
     text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
   }
 
   .navBar label {
@@ -105,9 +116,9 @@
     display: none;
   }
   #toggle {
-      order: 5; 
-      margin-top: 1rem;
-      display: none;
+    order: 5;
+    margin-top: 1rem;
+    display: none;
   }
 
   .about {
@@ -115,25 +126,26 @@
     margin-bottom: 1rem;
   }
   #headShot {
-    width: 15rem;
+    height: 15rem;
     border-radius: 2%;
     margin-right: 1rem;
   }
 
   .about p {
-      line-height: 1.4em;
-      word-spacing: 0.2em;
-      font-family: serif;
-      text-align: justify;
-      
+    line-height: 1.4em;
+    word-spacing: 0.2em;
+    font-family: serif;
+    text-align: justify;
+    font-family: "Merriweather Sans", sans-serif;
+    font-size: 20px;
   }
   .list-skills {
-    width: 100%; 
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: rgb(41, 1, 1);
+    background-color: #a5a5a5;
     margin-bottom: 1rem;
   }
   .skills-logo {
@@ -152,55 +164,67 @@
 }
 
 @media only screen and (max-width: 899px) {
-   
-    #logo {
-        width: 50px;
-        text-align: center;
-        /* display: none; */
-    }
-    .navBar {
-        display: flex;
-    }
-    label {
-        cursor: pointer;
-        text-align: right;
-        display: block;
-        font-size: 2rem;
-        border-bottom: 1px solid #EAEAEB;
-        line-height: 50px;
-    }
+  #logo {
+    width: 150px;
+    display: none;
+    /* margin-left: auto;
+        margin-right: auto; */
+  }
+  .navBar {
+    /* display: flex; */
+    cursor: pointer;
+    background: #212121;
+    color: #fff;
+  }
+  label {
+    padding-top: 10px;
+    height: 5rem;
+    text-align: right;
+    display: block;
+    font-size: 2rem;
+    border-bottom: 1px solid #eaeaeb;
+    line-height: 50px;
+    cursor: pointer;
+    font-family: "Permanent Marker", cursive;
+  }
 
-    .navBar p {
-        display: none;
-    }
-    .menu {
-        text-align: center;
-        width: 100%;
-        display: none;    
-    }
+  .navBar p {
+    display: none;
+    order: 1;
+    text-align: center;
+    font-family: "Permanent Marker", cursive;
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+  .menu {
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
 
-    .menu a {
-        display: block;
-        text-align: center;
-        line-height: 50px;
-        border-bottom: 1px solid #EAEAEB;
-        margin: 0;
-    }
+  .menu a {
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    border-bottom: 1px solid #eaeaeb;
+    margin: 0;
+    text-decoration: none;
+    color: white;
+  }
 
   #toggle:checked + .menu {
-      display: block;
+    transition: ;
+    display: block;
   }
-  
-    .my-work {
-    margin: 1rem 1rem;
-  }
+
   .list-skills {
+    margin-top: 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: rgb(41, 1, 1);
-    margin-bottom: 1rem;  
+    background-color: #a5a5a5;
+    margin-bottom: 1rem;
   }
   .skills-logo {
     margin-top: 1rem;
@@ -214,12 +238,25 @@
     box-sizing: border-box;
     display: flex;
     justify-content: flex-start;
+    padding: 10px;
   }
   .about p {
-    margin: 1rem 2rem;
+    font-family: "Merriweather Sans", sans-serif;
+    line-height: 1.4em;
+    word-spacing: 0.2em;
+    text-align: justify;
+    margin: 0 15px;
   }
   #headShot {
     border-radius: 2%;
+    height: 300px;
+  }
+
+  .my-work {
+    margin: 25px 15px;
+  }
+  .projects {
+    margin-bottom: 10px;
+    background-color: teal;
   }
 }
-

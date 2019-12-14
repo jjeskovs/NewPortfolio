@@ -1,14 +1,10 @@
 * {
   box-sizing: border-box;
 }
+ #toggle {display: none;}
 
 /* @media (min-width: 1440px) {
-  .my-work {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
+
 
   .list-skills {
     width: 100%;
@@ -47,7 +43,7 @@
   }
 } */
 
-@media (min-width: 1024px) {
+@media (min-width: 900px) {
   .container {
     width: 80%;
     margin: 3rem auto;
@@ -74,6 +70,7 @@
     width: 100%;
     padding: 4rem 5rem;
     justify-content: flex-end;
+    text-decoration: none;
   }
   .navBar p {
     order: 1;
@@ -85,18 +82,32 @@
   .navBar img {
     order: 3;
   }
-  .navBar ul {
+  .menu {
     order: 2;
     margin: 0;
     padding-right: 3rem;
     font-size: 1rem;
     font-family: "Pacifico", cursive;
+    text-decoration: none;
   }
 
-  .navBar ul li {
+  .menu a {
     margin-top: 1.5rem;
     display: inline-block;
     padding: 0rem 1rem;
+    text-decoration: none;
+  }
+
+  .navBar label {
+    order: 5;
+    margin-top: 1rem;
+    font-size: 2rem;
+    display: none;
+  }
+  #toggle {
+      order: 5; 
+      margin-top: 1rem;
+      display: none;
   }
 
   .about {
@@ -117,6 +128,7 @@
       
   }
   .list-skills {
+    width: 100%; 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -131,10 +143,55 @@
     margin-right: auto;
     width: 50px;
   }
+  .my-work {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
-/* @media (min-width: 768px) {
-  .my-work {
+@media only screen and (max-width: 899px) {
+   
+    #logo {
+        width: 50px;
+        text-align: center;
+        /* display: none; */
+    }
+    .navBar {
+        display: flex;
+    }
+    label {
+        cursor: pointer;
+        text-align: right;
+        display: block;
+        font-size: 2rem;
+        border-bottom: 1px solid #EAEAEB;
+        line-height: 50px;
+    }
+
+    .navBar p {
+        display: none;
+    }
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;    
+    }
+
+    .menu a {
+        display: block;
+        text-align: center;
+        line-height: 50px;
+        border-bottom: 1px solid #EAEAEB;
+        margin: 0;
+    }
+
+  #toggle:checked + .menu {
+      display: block;
+  }
+  
+    .my-work {
     margin: 1rem 1rem;
   }
   .list-skills {
@@ -143,7 +200,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     background-color: rgb(41, 1, 1);
-    margin-bottom: 1rem;
+    margin-bottom: 1rem;  
   }
   .skills-logo {
     margin-top: 1rem;
@@ -166,26 +223,3 @@
   }
 }
 
-@media (min-width: 320px) {
-  .container {
-    width: 100%;
-    margin: 3rem auto;
-  }
-  #headShot {
-    width: 150px;
-    border-radius: 2%;
-    margin-left: 118px;
-    margin-right: auto; */
-  }
-
-.skills-logo {
-    width: 75px;
-    margin-left: 25px;
-    margin-right: auto;
-  }
-  .about p {
-    /* text-align: center; */
-    margin-left: auto;
-    margin-right: auto;
-  }
-} */

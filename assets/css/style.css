@@ -1,16 +1,14 @@
 * {
   box-sizing: border-box;
 }
+
+body {
+  padding: 10px;
+}
 #toggle {
   display: none;
 }
 
-.navBar {
-  background: url("../img/nav-background.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
 .container {
   max-width: 80%;
   margin: 0 auto;
@@ -24,6 +22,8 @@
   background: url("../img/nav-background.jpg") no-repeat center;
   background-size: cover;
   background-attachment: fixed;
+
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
 }
 .intro p {
   color: whitesmoke;
@@ -31,7 +31,17 @@
   text-shadow: 2px 2px 4px #000000;
   font-size: 40px;
   text-align: center;
-  padding-top: 150px;
+  /* padding-top: 150px; */
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+.intro-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .projects {
@@ -51,12 +61,60 @@
   height: 500px;
 }
 
+.btn:link, 
+.btn:visited {
+  transition: all .2s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(114, 111, 111, 0.459)
+
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(114, 111, 111, 0.459)
+}
+
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+    transform: translateX(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight  {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  80% {
+    transform: translateX(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
 @media (min-width: 900px) {
   .container {
     width: 80%;
     margin: 3rem auto;
   }
-  .sources {
+  .btn {
     display: flex;
   }
   .projects {
@@ -86,6 +144,11 @@
     margin-right: auto;
     margin-top: 1rem;
     font-family: "Permanent Marker", cursive;
+    
+  }
+
+  .navBar p:hover {
+    animation: moveInLeft 1s ease-out;
   }
   .navBar img {
     order: 3;
@@ -124,8 +187,9 @@
     display: flex;
     width: 100%;
     height: 100vh;
-    background: rgb(14, 13, 13);
+    background: linear-gradient(to right bottom, #0a111b, rgb(14, 13, 13));
     color: #ffffff;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
   }
   #headShot {
     height: 35rem;
@@ -153,6 +217,7 @@
     flex-direction: row;
     justify-content: center;
     margin-bottom: 1rem;
+    animation: moveInRight 1s ease-out ;
   }
   .skills-logo {
     margin-top: 1rem;
@@ -176,7 +241,7 @@
     margin-top: 0;
   }
 
-  .projects{
+  .projects {
     margin: 25px;
   }
 }
@@ -241,7 +306,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: #a5a5a5;
     margin-bottom: 1rem;
   }
   .skills-logo {

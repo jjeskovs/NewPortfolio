@@ -1,16 +1,13 @@
-*,
-*::after,
-*::before {
+* {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; }
+  box-sizing: border-box; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 10px; }
 
 body {
-  padding: 1rem;
-  box-sizing: border-box; }
+  padding: 10px; }
 
 #toggle {
   display: none; }
@@ -41,7 +38,7 @@ body {
   animation-duration: 1s;
   animation-timing-function: ease-out; }
 
-.intro__box {
+.intro-box {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -94,141 +91,121 @@ body {
     opacity: 1;
     transform: translate(0); } }
 
-.container {
-  width: 80%;
-  margin: 3rem auto; }
+@media (min-width: 900px) {
+  .container {
+    width: 80%;
+    margin: 3rem auto; }
+  .btn {
+    display: flex; }
+  .projects {
+    background-color: violet;
+    box-sizing: border-box;
+    flex-basis: 30%;
+    margin-bottom: 1rem; }
+  #logo {
+    height: 4rem;
+    border-radius: 20%;
+    float: right; }
+  .navBar {
+    display: flex;
+    height: 10rem;
+    background: #212121;
+    color: #fff;
+    width: 100%;
+    padding: 1rem 5rem;
+    justify-content: flex-end; }
+  .navBar p {
+    order: 1;
+    font-size: 4rem;
+    margin-right: auto;
+    margin-top: 1rem;
+    font-family: "Permanent Marker", cursive; }
+  .navBar p:hover {
+    animation: moveInLeft 1s ease-out; }
+  .navBar img {
+    margin-top: 2rem;
+    order: 3; }
+  .menu {
+    order: 2;
+    margin: 0;
+    padding-right: 6rem;
+    font-family: "Pacifico", cursive;
+    text-decoration: none; }
+  .menu a {
+    margin-top: 2.5rem;
+    display: inline-block;
+    padding: 0rem 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #fff; }
+  .navBar label {
+    order: 5;
+    margin-top: 1rem;
+    font-size: 2rem;
+    display: none; }
+  #toggle {
+    order: 5;
+    margin-top: 1rem;
+    display: none; }
+  .about {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right bottom, #0a111b, #0e0d0d);
+    color: #ffffff;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%); }
+  #headShot {
+    height: 35rem;
+    border-radius: 2%;
+    margin-right: 1rem;
+    margin-top: 25vh;
+    margin-left: auto; }
+  .about p {
+    width: 50%;
+    margin-top: 30vh;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.4em;
+    word-spacing: 0.2em;
+    font-family: serif;
+    text-align: justify;
+    font-family: "Merriweather Sans", sans-serif;
+    font-size: 3rem; }
+  .list-skills {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 1rem;
+    animation: moveInRight 1s ease-out; }
+  .skills-logo {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin: 6rem;
+    /* margin-left: auto;
+      margin-right: auto; */
+    width: 5rem; }
+  .work-section {
+    height: 100vh;
+    background: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 0; }
+  .projects {
+    margin: 2.5rem; } }
 
-.btn {
-  display: flex; }
-
-.projects {
-  background-color: violet;
-  box-sizing: border-box;
-  flex-basis: 30%;
-  margin-bottom: 1rem; }
-
-#navBar__logo {
-  height: 4rem;
-  border-radius: 20%;
-  float: right; }
-
-.navBar {
-  display: flex;
-  height: 10rem;
-  background: #212121;
-  color: #fff;
-  width: 100%;
-  padding: 1rem 5rem;
-  justify-content: flex-end; }
-
-.navBar p {
-  order: 1;
-  font-size: 4rem;
-  margin-right: auto;
-  margin-top: 1rem;
-  font-family: "Permanent Marker", cursive; }
-
-.navBar p:hover {
-  animation: moveInLeft 1s ease-out; }
-
-.navBar img {
-  margin-top: 2rem;
-  order: 3; }
-
-.navBar__menu {
-  order: 2;
-  margin: 0;
-  padding-right: 6rem;
-  font-family: "Pacifico", cursive;
-  text-decoration: none; }
-
-.navBar__menu a {
-  margin-top: 2.5rem;
-  display: inline-block;
-  padding: 0rem 1rem;
-  font-size: 2rem;
-  text-decoration: none;
-  color: #fff; }
-
-.navBar label {
-  order: 5;
-  margin-top: 1rem;
-  font-size: 2rem;
-  display: none; }
-
-#toggle {
-  order: 5;
-  margin-top: 1rem;
-  display: none; }
-
-.about {
-  display: flex;
-  width: 100%;
-  height: 100vh;
-  background: linear-gradient(to right bottom, #0a111b, #0e0d0d);
-  color: #ffffff;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%); }
-
-#headShot {
-  height: 35rem;
-  border-radius: 2%;
-  margin-right: 1rem;
-  margin-top: 25vh;
-  margin-left: auto; }
-
-.about p {
-  width: 50%;
-  margin-top: 30vh;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 1.4em;
-  word-spacing: 0.2em;
-  font-family: serif;
-  text-align: justify;
-  font-family: "Merriweather Sans", sans-serif;
-  font-size: 3rem; }
-
-.intro__list-skills {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-bottom: 1rem;
-  animation: moveInRight 1s ease-out; }
-
-.skills-logo {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  margin: 6rem;
-  /* margin-left: auto;
-    margin-right: auto; */
-  width: 5rem; }
-
-.work-section {
-  height: 100vh;
-  background: url("../img/background.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 0; }
-
-.projects {
-  margin: 2.5rem; }
-
-/* @media only screen and (max-width: 1360px) {
-  html {padding: 1rem;}
-} */
 @media only screen and (max-width: 899px) {
-  #navBar__logo {
+  #logo {
     width: 15rem;
     display: none;
     /* margin-left: auto;
-        margin-right: auto; */ }
+          margin-right: auto; */ }
   .navBar {
     /* display: flex; */
     cursor: pointer;
@@ -251,22 +228,21 @@ body {
     font-family: "Permanent Marker", cursive;
     font-size: 2rem;
     margin-bottom: 0; }
-  .navBar__menu {
+  .menu {
     text-align: center;
     width: 100%;
     display: none; }
-  .navBar__menu a {
+  .menu a {
     display: block;
     text-align: center;
     line-height: 5rem;
     border-bottom: 0.1rem solid #eaeaeb;
     margin: 0;
     text-decoration: none;
-    color: white;
-    font-size: 1.5rem; }
-  #toggle:checked + .navBar__menu {
+    color: white; }
+  #toggle:checked + .menu {
     display: block; }
-  .intro__list-skills {
+  .list-skills {
     margin-top: 0;
     display: flex;
     flex-direction: row;
@@ -297,8 +273,4 @@ body {
     margin: 2.5rem 1.5rem; }
   .projects {
     margin-bottom: 1rem;
-    background-color: teal; }
-  .clearfix {
-    content: "";
-    clear: both;
-    display: block; } }
+    background-color: teal; } }

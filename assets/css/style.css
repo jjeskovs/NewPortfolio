@@ -1,76 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-html {
-  font-size: 10px; }
-
-body {
-  padding: 10px; }
-
-#toggle {
-  display: none; }
-
-.container {
-  max-width: 80%;
-  margin: 0 auto;
-  background: #f9f9f9; }
-
-.intro {
-  height: 100vh;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  background: url("../img/nav-background.jpg") no-repeat center;
-  background-size: cover;
-  background-attachment: fixed;
-  clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%); }
-
-.intro p {
-  color: whitesmoke;
-  color: white;
-  text-shadow: 0.2rem 0.2rem 0.4rem #000000;
-  font-size: 4rem;
-  text-align: center;
-  /* padding-top: 150px; */
-  animation-name: moveInLeft;
-  animation-duration: 1s;
-  animation-timing-function: ease-out; }
-
-.intro-box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
-
-.projects {
-  min-height: 50rem; }
-
-.footer {
-  padding: 3rem 0;
-  clear: both;
-  font-size: 1.2rem;
-  color: #ffffff;
-  color: #cccccc;
-  text-align: center;
-  background: linear-gradient(to right bottom, #0a111b, #0e0d0d);
-  color: #ffffff;
-  border-top: 0.8rem solid #4aaaa5;
-  height: 50rem; }
-
-.btn:link,
-.btn:visited {
-  transition: all .2s; }
-
-.btn:hover {
-  transform: translateY(-0.3rem);
-  box-shadow: 0 1rem 2rem rgba(114, 111, 111, 0.459); }
-
-.btn:active {
-  transform: translateY(-0.1rem);
-  box-shadow: 0 0.5rem 1rem rgba(114, 111, 111, 0.459); }
-
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -91,14 +18,120 @@ body {
     opacity: 1;
     transform: translate(0); } }
 
-@media only screen and (max-width: 899px) {
-  #logo {
-    width: 15rem;
-    display: none;
-    /* margin-left: auto;
-          margin-right: auto; */ }
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 10px; }
+
+body {
+  padding: 10px;
+  box-sizing: border-box; }
+
+#toggle {
+  display: none; }
+
+.container {
+  max-width: 80%;
+  margin: 0 auto; }
+
+@media only screen and (min-width: 901px) {
   .navBar {
-    /* display: flex; */
+    display: flex;
+    background: #212121;
+    color: #fff;
+    width: 100%;
+    padding: 1rem 5rem;
+    justify-content: flex-end; }
+    .navBar #logo {
+      height: 4rem;
+      border-radius: 20%;
+      float: right;
+      margin-top: 2rem;
+      order: 3; }
+    .navBar label {
+      order: 5;
+      margin-top: 1rem;
+      font-size: 2rem;
+      display: none; }
+    .navBar p {
+      order: 1;
+      font-size: 4rem;
+      margin-right: auto;
+      margin-top: 1rem;
+      font-family: "Permanent Marker", cursive; }
+      .navBar p:hover {
+        animation: moveInLeft 1s ease-out; }
+    .navBar .menu {
+      order: 2;
+      margin: 0;
+      padding-right: 6rem;
+      font-family: "Pacifico", cursive;
+      text-decoration: none; }
+      .navBar .menu a {
+        margin-top: 2.5rem;
+        display: inline-block;
+        padding: 0rem 1rem;
+        font-size: 2rem;
+        text-decoration: none;
+        color: #fff; } }
+
+.btn:link,
+.btn:visited {
+  transition: all 0.2s; }
+
+.btn:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba(114, 111, 111, 0.459); }
+
+.btn:active {
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0.5rem 1rem rgba(114, 111, 111, 0.459); }
+
+.intro {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: url("../img/nav-background.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%); }
+  .intro p {
+    color: #ffffff;
+    text-shadow: 0.2rem 0.2rem 0.4rem #000000;
+    font-size: 4rem;
+    text-align: center;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out; }
+
+.intro-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.footer {
+  padding: 3rem 0;
+  clear: both;
+  font-size: 1.2rem;
+  color: #ffffff;
+  color: #cccccc;
+  text-align: center;
+  background: linear-gradient(to right bottom, #0a111b, #0e0d0d);
+  color: #ffffff;
+  border-top: 0.8rem solid #4aaaa5;
+  height: 50rem; }
+
+@media only screen and (max-width: 900px) {
+  #logo {
+    display: none; }
+  .navBar {
     cursor: pointer;
     background: #212121;
     color: #fff; }

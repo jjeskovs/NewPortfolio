@@ -1,5 +1,11 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
 }
 
 body {
@@ -28,8 +34,8 @@ body {
 .intro p {
   color: whitesmoke;
   color: white;
-  text-shadow: 2px 2px 4px #000000;
-  font-size: 40px;
+  text-shadow: 0.2rem 0.2rem 0.4rem #000000;
+  font-size: 4rem;
   text-align: center;
   /* padding-top: 150px; */
   animation-name: moveInLeft;
@@ -45,20 +51,20 @@ body {
 }
 
 .projects {
-  min-height: 500px;
+  min-height: 50rem;
 }
 
 .footer {
-  padding: 30px 0;
+  padding: 3rem 0;
   clear: both;
-  font-size: 12px;
+  font-size: 1.2rem;
   color: #ffffff;
   color: #cccccc;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.699);
   /* background: #666666; */
-  border-top: 8px solid #4aaaa5;
-  height: 500px;
+  border-top: 0.8rem solid #4aaaa5;
+  height: 50rem;
 }
 
 .btn:link, 
@@ -67,25 +73,25 @@ body {
 }
 
 .btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(114, 111, 111, 0.459)
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba(114, 111, 111, 0.459)
 
 }
 
 .btn:active {
-  transform: translateY(-1px);
-  box-shadow: 0 5px 10px rgba(114, 111, 111, 0.459)
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0.5rem 1rem rgba(114, 111, 111, 0.459)
 }
 
 
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(-10rem);
   }
 
   80% {
-    transform: translateX(20px);
+    transform: translateX(2rem);
   }
 
   100% {
@@ -97,11 +103,11 @@ body {
 @keyframes moveInRight  {
   0% {
     opacity: 0;
-    transform: translateX(100px);
+    transform: translateX(10rem);
   }
 
   80% {
-    transform: translateX(-20px);
+    transform: translateX(-2rem);
   }
 
   100% {
@@ -131,7 +137,7 @@ body {
   }
   .navBar {
     display: flex;
-    height: 100px;
+    height: 10rem;
     background: #212121;
     color: #fff;
     width: 100%;
@@ -140,7 +146,7 @@ body {
   }
   .navBar p {
     order: 1;
-    font-size: 2rem;
+    font-size: 4rem;
     margin-right: auto;
     margin-top: 1rem;
     font-family: "Permanent Marker", cursive;
@@ -151,24 +157,24 @@ body {
     animation: moveInLeft 1s ease-out;
   }
   .navBar img {
+    margin-top: 2rem;
     order: 3;
   }
   .menu {
     order: 2;
     margin: 0;
-    padding-right: 3rem;
-    font-size: 1rem;
+    padding-right: 6rem;
     font-family: "Pacifico", cursive;
     text-decoration: none;
   }
 
   .menu a {
-    margin-top: 1.5rem;
+    margin-top: 2.5rem;
     display: inline-block;
     padding: 0rem 1rem;
+    font-size: 2rem;
     text-decoration: none;
     color: #fff;
-    font-size: 1rem;
   }
 
   .navBar label {
@@ -209,7 +215,7 @@ body {
     font-family: serif;
     text-align: justify;
     font-family: "Merriweather Sans", sans-serif;
-    font-size: 20px;
+    font-size: 3rem;
   }
   .list-skills {
     width: 100%;
@@ -222,10 +228,10 @@ body {
   .skills-logo {
     margin-top: 1rem;
     margin-bottom: 1rem;
-    margin: 60px;
+    margin: 6rem;
     /* margin-left: auto;
     margin-right: auto; */
-    width: 50px;
+    width: 5rem;
   }
   .work-section {
     height: 100vh;
@@ -242,13 +248,13 @@ body {
   }
 
   .projects {
-    margin: 25px;
+    margin: 2.5rem;
   }
 }
 
 @media only screen and (max-width: 899px) {
   #logo {
-    width: 150px;
+    width: 15rem;
     display: none;
     /* margin-left: auto;
         margin-right: auto; */
@@ -260,13 +266,13 @@ body {
     color: #fff;
   }
   label {
-    padding-top: 10px;
+    padding-top: 1rem;
     height: 5rem;
     text-align: right;
     display: block;
     font-size: 2rem;
-    border-bottom: 1px solid #eaeaeb;
-    line-height: 50px;
+    border-bottom: 0.1rem solid #eaeaeb;
+    line-height: 5rem;
     cursor: pointer;
     font-family: "Permanent Marker", cursive;
   }
@@ -288,15 +294,14 @@ body {
   .menu a {
     display: block;
     text-align: center;
-    line-height: 50px;
-    border-bottom: 1px solid #eaeaeb;
+    line-height: 5rem;
+    border-bottom: 0.1rem solid #eaeaeb;
     margin: 0;
     text-decoration: none;
     color: white;
   }
 
   #toggle:checked + .menu {
-    transition: ;
     display: block;
   }
 
@@ -313,32 +318,32 @@ body {
     margin-bottom: 1rem;
     margin-left: auto;
     margin-right: auto;
-    width: 50px;
+    width: 5rem;
   }
 
   .about {
     box-sizing: border-box;
     display: flex;
     justify-content: flex-start;
-    padding: 10px;
+    padding: 1rem;
   }
   .about p {
     font-family: "Merriweather Sans", sans-serif;
     line-height: 1.4em;
     word-spacing: 0.2em;
     text-align: justify;
-    margin: 0 15px;
+    margin: 0 1.5rem;
   }
   #headShot {
     border-radius: 2%;
-    height: 300px;
+    height: 30rem;
   }
 
   .my-work {
-    margin: 25px 15px;
+    margin: 2.5rem 1.5rem;
   }
   .projects {
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
     background-color: teal;
   }
 }

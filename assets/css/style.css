@@ -64,24 +64,22 @@ body {
       margin-right: auto;
       margin-top: 1rem;
       font-family: "Permanent Marker", cursive; }
-      .navBar p:hover {
-        animation: moveInLeft 1s ease-out; }
     .navBar .menu {
       order: 2;
       margin: 0;
       padding-right: 6rem;
       font-family: "Pacifico", cursive;
-      text-decoration: none; }
+      text-decoration: none;
+      color: #ffffff; }
       .navBar .menu a {
         margin-top: 2.5rem;
         display: inline-block;
         padding: 0rem 1rem;
         font-size: 2rem;
         text-decoration: none;
-        color: #fff; } }
+        color: #ffffff; } }
 
-.btn:link,
-.btn:visited {
+.btn:link, .btn:visited {
   transition: all 0.2s; }
 
 .btn:hover {
@@ -109,12 +107,22 @@ body {
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out; }
+  .intro__box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
 
-.intro-box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
+.intro__skills {
+  width: 100%;
+  margin-bottom: 1rem;
+  animation: moveInRight 1s ease-out;
+  text-align: center; }
+  .intro__skills img {
+    width: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin: 3rem; }
 
 .footer {
   padding: 3rem 0;
@@ -163,7 +171,7 @@ body {
     border-bottom: 0.1rem solid #eaeaeb;
     margin: 0;
     text-decoration: none;
-    color: white; }
+    color: #ffffff; }
   #toggle:checked + .menu {
     display: block; }
   .list-skills {

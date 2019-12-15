@@ -350,4 +350,25 @@
       background-color: teal;
     }
   }
+
+   
   
+@mixin clearfix {
+    &:::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+}
+
+%btn-placeholder {
+  padding: 10px;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-main:link, .btn-hot:link {
+  padding: 10px;
+  display: inline-block;
+  text-align: center;
+}

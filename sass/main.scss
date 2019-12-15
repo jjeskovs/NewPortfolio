@@ -1,37 +1,38 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  html {
-    font-size: 10px;
-  }
-  
-  body {
-    padding: 10px;
-  }
-  #toggle {
-    display: none;
-  }
-  
-  .container {
-    max-width: 80%;
-    margin: 0 auto;
-    background: #f9f9f9;
-  }
-  .intro {
-    height: 100vh;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    background: url("../img/nav-background.jpg") no-repeat center;
-    background-size: cover;
-    background-attachment: fixed;
-  
-    clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
-  }
-  .intro p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  padding: 10px;
+}
+#toggle {
+  display: none;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+  background: #f9f9f9;
+}
+
+.intro {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: url("../img/nav-background.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+
+  p {
     color: whitesmoke;
     color: white;
     text-shadow: 0.2rem 0.2rem 0.4rem #000000;
@@ -42,308 +43,309 @@
     animation-duration: 1s;
     animation-timing-function: ease-out;
   }
-  
-  .intro-box {
+}
+
+.intro-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.footer {
+  padding: 3rem 0;
+  clear: both;
+  font-size: 1.2rem;
+  color: #ffffff;
+  color: #cccccc;
+  text-align: center;
+  background: linear-gradient(to right bottom, #0a111b, rgb(14, 13, 13));
+  color: #ffffff;
+  border-top: 0.8rem solid #4aaaa5;
+  height: 50rem;
+}
+
+.btn:link,
+.btn:visited {
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba(114, 111, 111, 0.459);
+}
+
+.btn:active {
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0.5rem 1rem rgba(114, 111, 111, 0.459);
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  80% {
+    transform: translateX(2rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  80% {
+    transform: translateX(-2rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+// .container {
+//   width: 80%;
+//   margin: 3rem auto;
+// }
+.btn {
+  display: flex;
+}
+.projects {
+  background-color: violet;
+  box-sizing: border-box;
+  flex-basis: 30%;
+  margin-bottom: 1rem;
+}
+
+#logo {
+  height: 4rem;
+  border-radius: 20%;
+  float: right;
+}
+.navBar {
+  display: flex;
+  height: 10rem;
+  background: #212121;
+  color: #fff;
+  width: 100%;
+  padding: 1rem 5rem;
+  justify-content: flex-end;
+}
+.navBar p {
+  order: 1;
+  font-size: 4rem;
+  margin-right: auto;
+  margin-top: 1rem;
+  font-family: "Permanent Marker", cursive;
+}
+
+.navBar p:hover {
+  animation: moveInLeft 1s ease-out;
+}
+.navBar img {
+  margin-top: 2rem;
+  order: 3;
+}
+.menu {
+  order: 2;
+  margin: 0;
+  padding-right: 6rem;
+  font-family: "Pacifico", cursive;
+  text-decoration: none;
+}
+
+.menu a {
+  margin-top: 2.5rem;
+  display: inline-block;
+  padding: 0rem 1rem;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.navBar label {
+  order: 5;
+  margin-top: 1rem;
+  font-size: 2rem;
+  display: none;
+}
+#toggle {
+  order: 5;
+  margin-top: 1rem;
+  display: none;
+}
+
+.about {
+  //   display: flex;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to right bottom, #0a111b, rgb(14, 13, 13));
+  color: #ffffff;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+
+  img {
+    float: left;
+    height: 35rem;
+    border-radius: 2%;
+    margin-right: 10rem;
+  }
+
+  p {
+    line-height: 1.4em;
+    word-spacing: 0.2em;
+    font-family: serif;
+    text-align: justify;
+    font-family: "Merriweather Sans", sans-serif;
+    font-size: 3rem;
+    
+  }
+}
+
+.about__block {
+  width: 80%;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  .projects {
-    min-height: 50rem;
-  }
-  
-  .footer {
-    padding: 3rem 0;
-    clear: both;
-    font-size: 1.2rem;
-    color: #ffffff;
-    color: #cccccc;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.699);
-    /* background: #666666; */
-    border-top: 0.8rem solid #4aaaa5;
-    height: 50rem;
-  }
-  
-  .btn:link, 
-  .btn:visited {
-    transition: all .2s;
-  }
-  
-  .btn:hover {
-    transform: translateY(-0.3rem);
-    box-shadow: 0 1rem 2rem rgba(114, 111, 111, 0.459)
-  
-  }
-  
-  .btn:active {
-    transform: translateY(-0.1rem);
-    box-shadow: 0 0.5rem 1rem rgba(114, 111, 111, 0.459)
-  }
-  
-  
-  @keyframes moveInLeft {
-    0% {
-      opacity: 0;
-      transform: translateX(-10rem);
-    }
-  
-    80% {
-      transform: translateX(2rem);
-    }
-  
-    100% {
-      opacity: 1;
-      transform: translate(0);
-    }
-  }
-  
-  @keyframes moveInRight  {
-    0% {
-      opacity: 0;
-      transform: translateX(10rem);
-    }
-  
-    80% {
-      transform: translateX(-2rem);
-    }
-  
-    100% {
-      opacity: 1;
-      transform: translate(0);
-    }
-  }
-  @media (min-width: 900px) {
-    .container {
-      width: 80%;
-      margin: 3rem auto;
-    }
-    .btn {
-      display: flex;
-    }
-    .projects {
-      background-color: violet;
-      box-sizing: border-box;
-      flex-basis: 30%;
-      margin-bottom: 1rem;
-    }
-  
-    #logo {
-      height: 4rem;
-      border-radius: 20%;
-      float: right;
-    }
-    .navBar {
-      display: flex;
-      height: 10rem;
-      background: #212121;
-      color: #fff;
-      width: 100%;
-      padding: 1rem 5rem;
-      justify-content: flex-end;
-    }
-    .navBar p {
-      order: 1;
-      font-size: 4rem;
-      margin-right: auto;
-      margin-top: 1rem;
-      font-family: "Permanent Marker", cursive;
-      
-    }
-  
-    .navBar p:hover {
-      animation: moveInLeft 1s ease-out;
-    }
-    .navBar img {
-      margin-top: 2rem;
-      order: 3;
-    }
-    .menu {
-      order: 2;
-      margin: 0;
-      padding-right: 6rem;
-      font-family: "Pacifico", cursive;
-      text-decoration: none;
-    }
-  
-    .menu a {
-      margin-top: 2.5rem;
-      display: inline-block;
-      padding: 0rem 1rem;
-      font-size: 2rem;
-      text-decoration: none;
-      color: #fff;
-    }
-  
-    .navBar label {
-      order: 5;
-      margin-top: 1rem;
-      font-size: 2rem;
-      display: none;
-    }
-    #toggle {
-      order: 5;
-      margin-top: 1rem;
-      display: none;
-    }
-  
-    .about {
-      display: flex;
-      width: 100%;
-      height: 100vh;
-      background: linear-gradient(to right bottom, #0a111b, rgb(14, 13, 13));
-      color: #ffffff;
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
-    }
-    #headShot {
-      height: 35rem;
-      border-radius: 2%;
-      margin-right: 1rem;
-      margin-top: 25vh;
-      margin-left: auto;
-    }
-  
-    .about p {
-      width: 50%;
-      margin-top: 30vh;
-      margin-left: auto;
-      margin-right: auto;
-      line-height: 1.4em;
-      word-spacing: 0.2em;
-      font-family: serif;
-      text-align: justify;
-      font-family: "Merriweather Sans", sans-serif;
-      font-size: 3rem;
-    }
-    .list-skills {
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      margin-bottom: 1rem;
-      animation: moveInRight 1s ease-out ;
-    }
-    .skills-logo {
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-      margin: 6rem;
-      /* margin-left: auto;
+  top: 10%;
+  left: 10%;
+}
+
+.list-skills {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 1rem;
+  animation: moveInRight 1s ease-out;
+}
+.skills-logo {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin: 6rem;
+  /* margin-left: auto;
       margin-right: auto; */
-      width: 5rem;
-    }
-    .work-section {
-      height: 100vh;
-      background: url("../img/background.jpg");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      background-attachment: fixed;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      margin-top: 0;
-    }
-  
-    .projects {
-      margin: 2.5rem;
-    }
-  }
-  
-  @media only screen and (max-width: 899px) {
-    #logo {
-      width: 15rem;
-      display: none;
-      /* margin-left: auto;
+  width: 5rem;
+}
+.work-section {
+  height: 100vh;
+  background: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 0;
+}
+
+.projects {
+  margin: 2.5rem;
+}
+
+@media only screen and (max-width: 899px) {
+  #logo {
+    width: 15rem;
+    display: none;
+    /* margin-left: auto;
           margin-right: auto; */
-    }
-    .navBar {
-      /* display: flex; */
-      cursor: pointer;
-      background: #212121;
-      color: #fff;
-    }
-    label {
-      padding-top: 1rem;
-      height: 5rem;
-      text-align: right;
-      display: block;
-      font-size: 2rem;
-      border-bottom: 0.1rem solid #eaeaeb;
-      line-height: 5rem;
-      cursor: pointer;
-      font-family: "Permanent Marker", cursive;
-    }
-  
-    .navBar p {
-      display: none;
-      order: 1;
-      text-align: center;
-      font-family: "Permanent Marker", cursive;
-      font-size: 2rem;
-      margin-bottom: 0;
-    }
-    .menu {
-      text-align: center;
-      width: 100%;
-      display: none;
-    }
-  
-    .menu a {
-      display: block;
-      text-align: center;
-      line-height: 5rem;
-      border-bottom: 0.1rem solid #eaeaeb;
-      margin: 0;
-      text-decoration: none;
-      color: white;
-    }
-  
-    #toggle:checked + .menu {
-      display: block;
-    }
-  
-    .list-skills {
-      margin-top: 0;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      margin-bottom: 1rem;
-    }
-    .skills-logo {
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-      margin-left: auto;
-      margin-right: auto;
-      width: 5rem;
-    }
-  
-    .about {
-      box-sizing: border-box;
-      display: flex;
-      justify-content: flex-start;
-      padding: 1rem;
-    }
-    .about p {
-      font-family: "Merriweather Sans", sans-serif;
-      line-height: 1.4em;
-      word-spacing: 0.2em;
-      text-align: justify;
-      margin: 0 1.5rem;
-    }
-    #headShot {
-      border-radius: 2%;
-      height: 30rem;
-    }
-  
-    .my-work {
-      margin: 2.5rem 1.5rem;
-    }
-    .projects {
-      margin-bottom: 1rem;
-      background-color: teal;
-    }
   }
+  .navBar {
+    /* display: flex; */
+    cursor: pointer;
+    background: #212121;
+    color: #fff;
+  }
+  label {
+    padding-top: 1rem;
+    height: 5rem;
+    text-align: right;
+    display: block;
+    font-size: 2rem;
+    border-bottom: 0.1rem solid #eaeaeb;
+    line-height: 5rem;
+    cursor: pointer;
+    font-family: "Permanent Marker", cursive;
+  }
+
+  .navBar p {
+    display: none;
+    order: 1;
+    text-align: center;
+    font-family: "Permanent Marker", cursive;
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+  .menu {
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+
+  .menu a {
+    display: block;
+    text-align: center;
+    line-height: 5rem;
+    border-bottom: 0.1rem solid #eaeaeb;
+    margin: 0;
+    text-decoration: none;
+    color: white;
+  }
+
+  #toggle:checked + .menu {
+    display: block;
+  }
+
+  .list-skills {
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  .skills-logo {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 5rem;
+  }
+
+  .about {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    padding: 1rem;
+  }
+  .about p {
+    font-family: "Merriweather Sans", sans-serif;
+    line-height: 1.4em;
+    word-spacing: 0.2em;
+    text-align: justify;
+    margin: 0 1.5rem;
+  }
+  #headShot {
+    border-radius: 2%;
+    height: 30rem;
+  }
+
+  .my-work {
+    margin: 2.5rem 1.5rem;
+  }
+  .projects {
+    margin-bottom: 1rem;
+    background-color: teal;
+  }
+}

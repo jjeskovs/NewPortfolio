@@ -68,57 +68,56 @@ body {
   // background: #f9f9f9;
 }
 
-// nav bar styles
+// largest screens
+
 @media only screen and (min-width: 901px) {
-.navBar {
-  display: flex;
-  background: #212121;
-  color: #fff;
-  width: 100%;
-  padding: 1rem 5rem;
-  justify-content: flex-end;
-  #logo {
-    height: 4rem;
-    border-radius: 20%;
-    float: right;
-    margin-top: 2rem;
-    order: 3;
-  }
-  label {
-    order: 5;
-    margin-top: 1rem;
-    font-size: 2rem;
-    display: none;
-  }
-  p {
-    order: 1;
-    font-size: 4rem;
-    margin-right: auto;
-    margin-top: 1rem;
-    font-family: "Permanent Marker", cursive;
-  
-  }
- 
-  &__menu {
-    order: 2;
-    margin: 0;
-    padding-right: 6rem;
-    font-family: "Pacifico", cursive;
-    @include style-link-text($font-primary);
-    a {
-      margin-top: 2.5rem;
-      display: inline-block;
-      padding: 0rem 1rem;
+  .navBar {
+    display: flex;
+    background: #212121;
+    color: #fff;
+    width: 100%;
+    padding: 1rem 5rem;
+    justify-content: flex-end;
+    #logo {
+      height: 4rem;
+      border-radius: 20%;
+      float: right;
+      margin-top: 2rem;
+      order: 3;
+    }
+    label {
+      order: 5;
+      margin-top: 1rem;
       font-size: 2rem;
+      display: none;
+    }
+    p {
+      order: 1;
+      font-size: 4rem;
+      margin-right: auto;
+      margin-top: 1rem;
+      font-family: "Permanent Marker", cursive;
+    }
+
+    &__menu {
+      order: 2;
+      margin: 0;
+      padding-right: 6rem;
+      font-family: "Pacifico", cursive;
       @include style-link-text($font-primary);
+      a {
+        margin-top: 2.5rem;
+        display: inline-block;
+        padding: 0rem 1rem;
+        font-size: 2rem;
+        @include style-link-text($font-primary);
+      }
     }
   }
-}
 }
 
 //navBar buttons animation
 .btn {
-
   &:link,
   &:visited {
     transition: all 0.2s;
@@ -135,8 +134,7 @@ body {
   }
 }
 
-
-// section 1 intro 
+// section 1 intro
 .intro {
   height: 100vh;
   width: 100%;
@@ -167,17 +165,16 @@ body {
 }
 
 .intro__skills {
-  width: 100%;
+  max-width: 114rem;
   margin-bottom: 1rem;
   animation: moveInRight 1s ease-out;
   text-align: center;
 
-  img{
-    width: 5rem;
+  img {
+    height: 5rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    margin: 3rem;
-    
+    margin: 2rem;
   }
 }
 
@@ -195,11 +192,9 @@ body {
   height: 50rem;
 }
 
-
 // small screens below
 
 @media only screen and (max-width: 900px) {
-  
   .navBar {
     cursor: pointer;
     background: #212121;
@@ -218,7 +213,7 @@ body {
     #logo {
       display: none;
     }
-  
+
     p {
       display: none;
       order: 1;
@@ -227,26 +222,24 @@ body {
       font-size: 2rem;
       margin-bottom: 0;
     }
-    
+
     &__menu {
       text-align: center;
       width: 100%;
       display: none;
       a {
-       display: block;
-       text-align: center;
-       line-height: 5rem;
-       border-bottom: 0.1rem solid #eaeaeb;
-       margin: 0;
-       @include style-link-text($font-primary)
-     }
+        display: block;
+        text-align: center;
+        line-height: 5rem;
+        border-bottom: 0.1rem solid #eaeaeb;
+        margin: 0;
+        @include style-link-text($font-primary);
+      }
     }
     #toggle:checked + .navBar__menu {
       display: block;
     }
   }
-
-
 
   .list-skills {
     margin-top: 0;
@@ -291,7 +284,27 @@ body {
   }
 }
 
+// smallest screens
 @media only screen and (max-width: 444px) {
+  // section 1 intro
+  .intro {
+    p {
+     font-size: 3rem;
+    }
+   
+    &__skills {
+      max-width: 114rem;
+      // margin-bottom: 1rem;
+      animation: moveInRight 1s ease-out;
+      text-align: center;
   
+      img {
+        width: auto;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin: 1rem;
+      }
+    }
+  }
 
 }

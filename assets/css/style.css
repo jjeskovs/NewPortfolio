@@ -114,15 +114,15 @@ body {
     transform: translate(-50%, -50%); }
 
 .intro__skills {
-  width: 100%;
+  max-width: 114rem;
   margin-bottom: 1rem;
   animation: moveInRight 1s ease-out;
   text-align: center; }
   .intro__skills img {
-    width: 5rem;
+    height: 5rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    margin: 3rem; }
+    margin: 2rem; }
 
 .footer {
   padding: 3rem 0;
@@ -206,3 +206,16 @@ body {
   .projects {
     margin-bottom: 1rem;
     background-color: teal; } }
+
+@media only screen and (max-width: 444px) {
+  .intro p {
+    font-size: 3rem; }
+  .intro__skills {
+    max-width: 114rem;
+    animation: moveInRight 1s ease-out;
+    text-align: center; }
+    .intro__skills img {
+      width: auto;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      margin: 1rem; } }

@@ -100,6 +100,18 @@ body {
       margin-right: auto;
       margin-top: 1rem;
       font-family: "Permanent Marker", cursive;
+      display: inline-block;
+      background-image: linear-gradient(to right, $font-primary, #969494c5);
+      -webkit-background-clip: text;
+      color: transparent;
+
+      letter-spacing: .2rem; 
+      transition: all .2s;
+      
+      &:hover {
+        transform: skewY(2deg);
+      }
+      
     }
 
     &__menu {
@@ -152,12 +164,19 @@ body {
   p {
     color: $font-primary;
     text-shadow: 0.2rem 0.2rem 0.4rem #000000;
-    font-size: 4rem;
+    font-size: 5rem;
     text-align: center;
 
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out;
+
+    letter-spacing: .2rem; 
+    transition: all .2s;
+    
+    &:hover {
+      transform: skewX(20deg);
+    }
   }
   &__box {
     position: absolute;
@@ -174,7 +193,7 @@ body {
   text-align: center;
 
   img {
-    height: 5rem;
+    height: 8rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
     margin: 2rem;
@@ -198,7 +217,7 @@ body {
     flex-direction: row;
     justify-content: center;
     max-width: 114rem;
-    margin-top: 10rem;
+    margin-top: 20rem;
     margin-left: auto;
     margin-right: auto;
     
@@ -217,6 +236,10 @@ body {
     text-align: justify;
     font-family: "Merriweather Sans", sans-serif;
     font-size: 20px;
+    display: inline-block;
+    background-image: linear-gradient(to right, $font-primary, #969494c5);
+    -webkit-background-clip: text;
+    color: transparent;
   }
 }
 
@@ -229,7 +252,7 @@ body {
   background: url("../img/background.jpg") no-repeat center;
   background-size: cover;
   background-attachment: fixed;
-
+  background-position: top;
   clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
 
   &__row {

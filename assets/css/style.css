@@ -124,6 +124,39 @@ body {
     margin-bottom: 1rem;
     margin: 2rem; }
 
+.about {
+  height: 100vh;
+  background: linear-gradient(to right bottom, #0a111b, #0e0d0d); }
+
+.about__box {
+  margin-top: 50rem;
+  max-width: 114rem;
+  background-color: #eee;
+  margin: 0 auto; }
+  .about__box img {
+    height: 50rem;
+    float: left; }
+
+.work__section {
+  height: 100vh;
+  margin: 10rem 0; }
+
+.work__row {
+  max-width: 114rem;
+  margin: 0 auto; }
+  .work__row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .work__row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .work__row .col-1-of-3 {
+    width: calc((100% - 12rem) / 3);
+    background-color: orange;
+    float: left; }
+    .work__row .col-1-of-3:not(:last-child) {
+      margin-right: 6rem; }
+
 .footer {
   padding: 3rem 0;
   clear: both;
@@ -174,19 +207,6 @@ body {
         color: #ffffff; }
     .navBar #toggle:checked + .navBar__menu {
       display: block; }
-  .list-skills {
-    margin-top: 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 1rem; }
-  .skills-logo {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    margin-left: auto;
-    margin-right: auto;
-    width: 5rem; }
   .about {
     box-sizing: border-box;
     display: flex;
@@ -200,12 +220,7 @@ body {
     margin: 0 1.5rem; }
   #headShot {
     border-radius: 2%;
-    height: 30rem; }
-  .my-work {
-    margin: 2.5rem 1.5rem; }
-  .projects {
-    margin-bottom: 1rem;
-    background-color: teal; } }
+    height: 30rem; } }
 
 @media only screen and (max-width: 444px) {
   .intro p {

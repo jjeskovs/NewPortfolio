@@ -99,7 +99,7 @@ body {
   
   }
  
-  .menu {
+  &__menu {
     order: 2;
     margin: 0;
     padding-right: 6rem;
@@ -195,53 +195,58 @@ body {
   height: 50rem;
 }
 
+
+// small screens below
+
 @media only screen and (max-width: 900px) {
-  #logo {
-    display: none;
-  }
+  
   .navBar {
     cursor: pointer;
     background: #212121;
     color: #fff;
-  }
-  label {
-    padding-top: 1rem;
-    height: 5rem;
-    text-align: right;
-    display: block;
-    font-size: 2rem;
-    border-bottom: 0.1rem solid #eaeaeb;
-    line-height: 5rem;
-    cursor: pointer;
-    font-family: "Permanent Marker", cursive;
+    label {
+      padding-top: 1rem;
+      height: 5rem;
+      text-align: right;
+      display: block;
+      font-size: 2rem;
+      border-bottom: 0.1rem solid #eaeaeb;
+      line-height: 5rem;
+      cursor: pointer;
+      font-family: "Permanent Marker", cursive;
+    }
+    #logo {
+      display: none;
+    }
+  
+    p {
+      display: none;
+      order: 1;
+      text-align: center;
+      font-family: "Permanent Marker", cursive;
+      font-size: 2rem;
+      margin-bottom: 0;
+    }
+    
+    &__menu {
+      text-align: center;
+      width: 100%;
+      display: none;
+      a {
+       display: block;
+       text-align: center;
+       line-height: 5rem;
+       border-bottom: 0.1rem solid #eaeaeb;
+       margin: 0;
+       @include style-link-text($font-primary)
+     }
+    }
+    #toggle:checked + .navBar__menu {
+      display: block;
+    }
   }
 
-  .navBar p {
-    display: none;
-    order: 1;
-    text-align: center;
-    font-family: "Permanent Marker", cursive;
-    font-size: 2rem;
-    margin-bottom: 0;
-  }
-  .menu {
-    text-align: center;
-    width: 100%;
-    display: none;
-  }
 
-  .menu a {
-    display: block;
-    text-align: center;
-    line-height: 5rem;
-    border-bottom: 0.1rem solid #eaeaeb;
-    margin: 0;
-    @include style-link-text($font-primary)
-  }
-
-  #toggle:checked + .menu {
-    display: block;
-  }
 
   .list-skills {
     margin-top: 0;
@@ -284,4 +289,9 @@ body {
     margin-bottom: 1rem;
     background-color: teal;
   }
+}
+
+@media only screen and (max-width: 444px) {
+  
+
 }

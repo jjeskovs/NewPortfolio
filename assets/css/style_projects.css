@@ -1,3 +1,4 @@
+/*
 * {
   box-sizing: border-box;
   margin: 0;
@@ -20,7 +21,7 @@ input, textarea {
 
 
 /* general */
-
+/*
 .container {
   width: 100%;
   max-width: 960px;
@@ -68,21 +69,21 @@ h3 {
 
 /* header */
 
-#masthead {
+/* #masthead {
   /* position: fixed; */
-  z-index: 99;
-  width: 100%;
+  /* z-index: 99; */
+  /* width: 100%; */
   /* margin: 0 0 30px; */
-  overflow: auto;
+  /* overflow: auto; */
   /* color: #ffffff; */
-  background-color: rgba(0, 0, 0, 0.699);
+  /* background-color: rgba(0, 0, 0, 0.699); */
   /* color: #4aaaa5; */
   /* background: #ffffff; */
   /* border-bottom: 2px solid #cccccc; */
   
-}
+/* } */
 
-#logo {
+/* #logo {
   float: left;
   width: 250px;
   height: 90px;
@@ -94,9 +95,9 @@ h3 {
   text-align: center;
   text-decoration: none;
   /* background: #4aaaa5; */
-}
+/* }  */
 
-nav {
+/* nav {
   float: right;
   margin-top: 25px;
   font-family: fantasy;
@@ -126,11 +127,11 @@ nav a:hover {
 
 nav a:active {
   color: #4aaaa5;
-}
+} */
 
 /* footer */
 
-footer {
+/* footer {
   width: 100%;
   padding: 30px 0;
   clear: both;
@@ -140,28 +141,28 @@ footer {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.699);
   /* background: #666666; */
-  border-top: 8px solid #4aaaa5;
-  height: 100px;
+  /* border-top: 8px solid #4aaaa5; */
+  /* height: 100px; */
 }
 .links {
-  border-radius: 30px;
+  /* border-radius: 30px; */
 }
 
-h3, h2 {
+/* h3, h2 {
   padding-bottom: 20px;
   margin-bottom: 15px;
   line-height: 22px;
   border-bottom: 2px solid #eeeeee;
-}
+} */
 
 /* main */
 
-#main-container {
+/* #main-container {
   padding-top: 25px;
   min-height: calc(100vh - 70px);
-}
+} */
 
-.main-section {
+/* .main-section {
   color:  #4aaaa5;
   float: left;
   width: 100%;
@@ -169,17 +170,17 @@ h3, h2 {
   padding: 30px;
   margin: 0 0 25px;
   /* opacity:1; */
-  background-color: rgba(0,0,0,.5);
+  /* background-color: rgba(0,0,0,.5); */
   /* background: #ffffff; */
-  border: 1px solid #dddddd;
-}
+  /* border: 1px solid #dddddd; */
+/* } */ 
 
-a {
+/* a {
   color: #4aaaa5;
-}
+} */
 /* portfolio page */
 
-.work {
+/* .work {
   position: relative;
   float: left;
   width: 274px;
@@ -195,9 +196,9 @@ a {
   width: 100%;
   border: 0 none;
   opacity: 0.8;
-}
+} */
 
-.work h3 {
+/* .work h3 {
   position: absolute;
   bottom: 20px;
   width: 100%;
@@ -209,48 +210,48 @@ a {
   text-align: center;
   background: #4aaaa5;
   border-bottom: 0;
-}
+} */
 
-.auth-image {
+/* .auth-image {
   float: left;
   width: 200px;
   height: auto;
   margin-top: 10px;
   margin-right: 25px;
-}
+} */
 
 /* contact page */
 
-#contact-form ul {
+/* #contact-form ul {
   margin-bottom: 20px;
-}
+} */
 
-#contact-form li {
+/* #contact-form li {
   margin-bottom: 10px;
-}
+} */
 
-label,
+/* label,
 input[type=text],
 input[type=email],
 textarea {
   display: block;
   width: 100%;
-}
+} */
 
-input[type=text],
+/* input[type=text],
 input[type=email],
 textarea {
   height: 35px;
   padding: 0 10px;
   font-size: 14px;
   border: 1px solid #dddddd;
-}
+} */
 
-textarea {
+/* textarea {
   height: 200px;
-}
+} */
 
-input[type=submit] {
+/* input[type=submit] {
   padding: 10px 30px;
   font-size: 18px;
   color: #ffffff;
@@ -284,9 +285,9 @@ input[type=submit] {
 nav {
   padding-right: 5%;
   }
-}
+} */
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   
   .main-section {
     width: 90%;
@@ -316,7 +317,7 @@ nav {
   margin-top: 30px;
 }
 
-#logo {
+ #logo {
 width: 100%;
 margin-top: 0;
 margin-left: 0;
@@ -327,4 +328,4 @@ background:
 }
 .h1 {
   background: #4aaaa5;
-}
+} */ 

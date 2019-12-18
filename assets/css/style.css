@@ -42,57 +42,56 @@ body {
   display: block;
   font-size: 2rem; }
 
-@media only screen and (min-width: 901px) {
-  .navBar {
-    display: flex;
-    background: #212121;
-    color: #fff;
-    width: 100%;
-    padding: 1rem 5rem;
-    justify-content: flex-end;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999; }
-    .navBar #logo {
-      height: 6rem;
-      border-radius: 20%;
-      float: right;
-      margin-top: 1rem;
-      order: 3; }
-    .navBar label {
-      order: 5;
-      margin-top: 1rem;
-      font-size: 2rem;
-      display: none; }
-    .navBar p {
-      order: 1;
-      font-size: 4rem;
-      margin-right: auto;
-      margin-top: 1rem;
-      font-family: "Permanent Marker", cursive;
+.navBar {
+  display: flex;
+  background: #212121;
+  color: #fff;
+  width: 100%;
+  padding: 1rem 5rem;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999; }
+  .navBar #logo {
+    height: 6rem;
+    border-radius: 20%;
+    float: right;
+    margin-top: 1rem;
+    order: 3; }
+  .navBar label {
+    order: 5;
+    margin-top: 1rem;
+    font-size: 2rem;
+    display: none; }
+  .navBar p {
+    order: 1;
+    font-size: 4rem;
+    margin-right: auto;
+    margin-top: 1rem;
+    font-family: "Permanent Marker", cursive;
+    display: inline-block;
+    background-image: linear-gradient(to right, #ffffff, #969494c5);
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 0.2rem;
+    transition: all 0.2s; }
+    .navBar p:hover {
+      transform: skewY(2deg); }
+  .navBar__menu {
+    order: 2;
+    margin: 0;
+    padding-right: 6rem;
+    font-family: "Pacifico", cursive;
+    text-decoration: none;
+    color: #ffffff; }
+    .navBar__menu a {
+      margin-top: 2.5rem;
       display: inline-block;
-      background-image: linear-gradient(to right, #ffffff, #969494c5);
-      -webkit-background-clip: text;
-      color: transparent;
-      letter-spacing: 0.2rem;
-      transition: all 0.2s; }
-      .navBar p:hover {
-        transform: skewY(2deg); }
-    .navBar__menu {
-      order: 2;
-      margin: 0;
-      padding-right: 6rem;
-      font-family: "Pacifico", cursive;
+      padding: 0rem 1rem;
+      font-size: 2rem;
       text-decoration: none;
       color: #ffffff; }
-      .navBar__menu a {
-        margin-top: 2.5rem;
-        display: inline-block;
-        padding: 0rem 1rem;
-        font-size: 2rem;
-        text-decoration: none;
-        color: #ffffff; } }
 
 .btn:link, .btn:visited {
   transition: all 0.2s; }
@@ -136,12 +135,17 @@ body {
   background-size: cover;
   background-attachment: fixed;
   clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%); }
+  @media only screen and (max-width: 1280px) {
+    .intro {
+      height: 120vh; } }
   .intro p {
+    display: block;
     color: #ffffff;
     text-shadow: 0.2rem 0.2rem 0.4rem #000000;
     font-size: 5rem;
     text-align: center;
-    margin-bottom: 8rem;
+    margin-top: 15rem;
+    margin-bottom: auto;
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out;
@@ -149,6 +153,15 @@ body {
     transition: all 0.2s; }
     .intro p:hover {
       transform: skewX(20deg); }
+    @media only screen and (max-width: 1280px) {
+      .intro p {
+        font-size: 3rem;
+        margin-bottom: auto; } }
+    @media only screen and (max-width: 425px) {
+      .intro p {
+        font-size: 2rem;
+        margin-top: 3rem;
+        margin-bottom: auto; } }
   .intro__box {
     position: absolute;
     top: 50%;
@@ -168,6 +181,14 @@ body {
     margin: 2rem; }
     .intro__skills img:hover {
       transform: translateY(-1.5rem) scale(1.5); }
+    @media only screen and (max-width: 1280px) {
+      .intro__skills img {
+        font-size: 3rem;
+        height: 5rem; } }
+    @media only screen and (max-width: 425px) {
+      .intro__skills img {
+        font-size: 3rem;
+        height: 3rem; } }
 
 .next-page {
   text-align: center; }
@@ -188,6 +209,9 @@ body {
     margin-top: 20rem;
     margin-left: auto;
     margin-right: auto; }
+    @media only screen and (max-width: 1280px) {
+      .about__row {
+        margin-top: 10rem; } }
   .about img {
     height: 25rem;
     padding: 0 3rem 2rem 0; }
@@ -214,6 +238,9 @@ body {
   background-attachment: fixed;
   background-position: top;
   clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%); }
+  @media screen and (max-width: 1280) {
+    .projects {
+      padding-top: 15rem; } }
 
 .project__row {
   display: flex;
@@ -376,15 +403,8 @@ body {
     .navBar #logo {
       display: none; }
     .navBar p {
-      display: none;
-      order: 1;
-      text-align: center;
-      font-family: "Permanent Marker", cursive;
-      font-size: 2rem;
-      margin-bottom: 0; }
+      display: none; }
     .navBar__menu {
-      text-align: center;
-      width: 100%;
       display: none; }
       .navBar__menu a {
         display: block;
@@ -396,44 +416,3 @@ body {
         color: #ffffff; }
     .navBar #toggle:checked + .navBar__menu {
       display: block; } }
-
-@media only screen and (max-width: 900px) and (max-width: 800px) {
-  .about {
-    height: auto; }
-    .about__row {
-      display: flex;
-      flex-direction: column; }
-    .about img {
-      margin-left: auto;
-      margin-right: auto;
-      width: 20rem;
-      padding: 0 3rem 2rem 0;
-      border-radius: 2%; }
-    .about p {
-      font-size: 1.5rem; } }
-
-@media only screen and (max-width: 444px) {
-  .intro p {
-    font-size: 2.4rem; }
-  .intro__skills {
-    max-width: 114rem;
-    text-align: center; }
-    .intro__skills img {
-      width: auto;
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-      margin: rem; }
-  .about {
-    height: auto; }
-    .about__row {
-      display: flex;
-      flex-direction: column; }
-    .about img {
-      margin-left: auto;
-      margin-right: auto;
-      width: 20rem;
-      padding: 0 3rem 2rem 0;
-      border-radius: 2%; }
-    .about p {
-      font-size: 1.5rem;
-      padding: 2rem; } }

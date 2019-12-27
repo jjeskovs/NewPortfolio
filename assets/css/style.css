@@ -53,12 +53,19 @@ body {
   top: 0;
   left: 0;
   z-index: 9999; }
+  @media only screen and (max-width: 900px) {
+    .navBar {
+      flex-direction: column;
+      justify-content: center; } }
   .navBar #logo {
     height: 6rem;
     border-radius: 20%;
     float: right;
     margin-top: 1rem;
     order: 3; }
+    @media only screen and (max-width: 900px) {
+      .navBar #logo {
+        display: none; } }
   .navBar label {
     order: 5;
     margin-top: 1rem;
@@ -85,6 +92,9 @@ body {
     font-family: "Pacifico", cursive;
     text-decoration: none;
     color: #ffffff; }
+    @media only screen and (max-width: 900px) {
+      .navBar__menu {
+        text-align: center; } }
     .navBar__menu a {
       margin-top: 2.5rem;
       display: inline-block;
@@ -405,35 +415,3 @@ body {
           @media only screen and (max-width: 950px) {
             .footer .contact__links a img {
               height: 4rem; } }
-
-@media only screen and (max-width: 900px) {
-  .navBar {
-    cursor: pointer;
-    background: #212121;
-    color: #fff; }
-    .navBar label {
-      padding-top: 1rem;
-      height: 5rem;
-      text-align: right;
-      display: block;
-      font-size: 2rem;
-      border-bottom: 0.1rem solid #eaeaeb;
-      line-height: 5rem;
-      cursor: pointer;
-      font-family: "Permanent Marker", cursive; }
-    .navBar #logo {
-      display: none; }
-    .navBar p {
-      display: none; }
-    .navBar__menu {
-      display: none; }
-      .navBar__menu a {
-        display: block;
-        text-align: center;
-        line-height: 5rem;
-        border-bottom: 0.1rem solid #eaeaeb;
-        margin: 0;
-        text-decoration: none;
-        color: #ffffff; }
-    .navBar #toggle:checked + .navBar__menu {
-      display: block; } }

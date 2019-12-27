@@ -263,8 +263,7 @@ body {
   position: relative;
   min-width: 25rem;
   min-height: 80rem;
-  perspective: 150rem;
-  -webkit-backface-visibility: hidden; }
+  perspective: 150rem; }
   @media screen and (max-width: 1024px) {
     .project__card {
       width: 100%; } }
@@ -282,7 +281,8 @@ body {
   height: 100%;
   backface-visibility: hidden;
   background: rgba(0, 0, 0, 0.699);
-  border-radius: 2rem; }
+  border-radius: 2rem;
+  -webkit-backface-visibility: hidden; }
   .card__front img {
     width: 90%;
     display: block;
@@ -329,7 +329,8 @@ body {
   backface-visibility: hidden;
   background: rgba(0, 0, 0, 0.699);
   transform: rotateY(180deg);
-  border-radius: 2rem; }
+  border-radius: 2rem;
+  -webkit-backface-visibility: hidden; }
 
 .btn-position {
   position: absolute;

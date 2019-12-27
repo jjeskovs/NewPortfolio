@@ -390,7 +390,7 @@ body {
   min-width: 25rem;
   min-height: 80rem;
   perspective: 150rem;
-  -webkit-backface-visibility: hidden;
+  
 
   @media screen and (max-width: 1024px) {
     width: 100%;
@@ -413,6 +413,7 @@ body {
   backface-visibility: hidden;
   background: rgba(0, 0, 0, 0.699);
   border-radius: 2rem;
+  -webkit-backface-visibility: hidden;
 
   img {
     width: 90%;
@@ -450,6 +451,7 @@ body {
   background: rgba(0, 0, 0, 0.699);
   transform: rotateY(180deg);
   border-radius: 2rem;
+  -webkit-backface-visibility: hidden;
 }
 
 .btn-position {

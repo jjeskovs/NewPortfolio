@@ -349,8 +349,8 @@ body {
 
 .footer {
   position: relative;
-  height: 60vh;
   width: 100%;
+  height: 80vh;
   padding: 3rem 0;
   clear: both;
   font-size: 1.2rem;
@@ -359,54 +359,51 @@ body {
   background: linear-gradient(to right bottom, #0a111b, #0e0d0d);
   color: #ffffff;
   border-top: 0.8rem solid #4aaaa5; }
-  @media only screen and (max-width: 1280px) {
+  @media only screen and (max-width: 1024px) {
     .footer {
-      height: 80vh; } }
+      height: 100vh; } }
+  @media only screen and (max-width: 900px) {
+    .footer {
+      height: 110vh; } }
   .footer .contact {
-    display: block;
     position: absolute;
     left: 50%;
     top: 30%;
-    max-width: 140rem;
-    margin: 5rem auto;
-    font-size: 2.5rem;
-    color: #ffffff;
-    line-height: 1.4em;
-    word-spacing: 0.1em;
-    font-family: serif;
-    text-align: justify;
-    font-family: "Merriweather Sans", sans-serif;
-    font-size: 1.8rem;
-    padding: 2rem 5%;
-    display: inline-block;
-    transform: translate(-50%, -50%); }
-    @media only screen and (max-width: 768px) {
-      .footer .contact {
-        margin-top: 9rem;
-        margin-bottom: 0; } }
-    .footer .contact a {
-      text-decoration: none;
-      color: #ffffff; }
-  .footer .contact__links {
-    display: block;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    margin-top: 10rem; }
-    @media only screen and (max-width: 768px) {
-      .footer .contact__links {
-        margin-top: 15rem; } }
-    .footer .contact__links a {
-      margin: 3rem;
-      text-decoration: none; }
-      .footer .contact__links a img {
-        height: 5rem;
-        margin-top: 3rem; }
-        @media only screen and (max-width: px) {
-          .footer .contact__links a img {
-            margin-top: 0;
-            height: 3rem; } }
+    max-width: 140rem; }
+    .footer .contact__text {
+      display: block;
+      padding-bottom: 0;
+      margin: 5rem auto 0rem;
+      font-size: 2.5rem;
+      color: #ffffff;
+      line-height: 1.4em;
+      word-spacing: 0.1em;
+      font-family: serif;
+      text-align: justify;
+      font-family: "Merriweather Sans", sans-serif;
+      font-size: 1.8rem;
+      padding: 2rem 5%;
+      display: inline-block;
+      transform: translate(-50%, -50%); }
+      @media only screen and (max-width: 768px) {
+        .footer .contact__text {
+          margin-top: 9rem;
+          margin-bottom: 0; } }
+      .footer .contact__text a {
+        text-decoration: none;
+        color: #ffffff; }
+    .footer .contact__links {
+      display: flex;
+      justify-content: center;
+      transform: translate(-50%, -50%); }
+      .footer .contact__links a {
+        margin: 2rem;
+        text-decoration: none; }
+        .footer .contact__links a img {
+          height: 5rem; }
+          @media only screen and (max-width: 950px) {
+            .footer .contact__links a img {
+              height: 4rem; } }
 
 @media only screen and (max-width: 900px) {
   .navBar {

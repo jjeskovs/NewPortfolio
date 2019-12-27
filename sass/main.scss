@@ -472,8 +472,8 @@ body {
 
 .footer {
   position: relative;
-  height: 60vh;
   width: 100%;
+  height: 80vh;
   padding: 3rem 0;
   clear: both;
   font-size: 1.2rem;
@@ -486,56 +486,65 @@ body {
   border-top: 0.8rem solid #4aaaa5;
   // height: 50rem;
 
-  @media only screen and (max-width: 1280px){
-    height: 80vh;
-    // padding: 15  rem 0 15rem 0;
-  }
+    @media only screen and (max-width: 1024px){
+      height: 100vh;
+      // padding: 15  rem 0 15rem 0;
+    }
+    @media only screen and (max-width: 900px){
+      height: 110vh;
+      // padding: 15  rem 0 15rem 0;
+    }
+
 
   .contact {
-    display: block;
     position: absolute;
     left: 50%;
     top: 30%;
     max-width: 140rem;
-    margin: 5rem auto;
-    @include card-text-style;
-    transform: translate(-50%, -50%);
-
-    @media only screen and (max-width: 768px) {
-      margin-top: 9rem;
-      margin-bottom: 0;
+    
+    &__text {
+      display: block;
+      padding-bottom: 0;
+      margin: 5rem auto 0rem;
+      @include card-text-style;
+      transform: translate(-50%, -50%);
+  
+      @media only screen and (max-width: 768px) {
+        margin-top: 9rem;
+        margin-bottom: 0;
+      }
+      
+      a {
+        text-decoration: none;
+        color: $font-primary;
+      }
+  
+  
     }
     
-    a {
-      text-decoration: none;
-      color: $font-primary;
-    }
-
-
-  }
-  .contact__links {
-    display: block;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    margin-top: 10rem;
-
-    @media only screen and (max-width: 768px) {
-      margin-top: 15rem;
-    }
-
-    a {
-      margin: 3rem;
-      text-decoration: none;
-
-      img {
-        height: 5rem;
-        margin-top: 3rem;
-
-        @media only screen and (max-width: px) {
-          margin-top: 0;
-          height: 3rem;
+    &__links {
+      display: flex;
+      justify-content: center;
+      transform: translate(-50%, -50%);
+      // margin-top: 10rem;
+  
+      // @media only screen and (max-width: 768px) {
+      //   margin-top: 15rem;
+      // }
+  
+      a {
+        
+        margin: 2rem;
+        text-decoration: none;
+  
+        img {
+          height: 5rem;
+          // margin-top: 3rem;
+  
+          @media only screen and (max-width: 950px) {
+            height: 4rem;
+            // top: 80%;
+          }
         }
       }
     }

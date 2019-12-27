@@ -413,7 +413,7 @@ body {
   backface-visibility: hidden;
   background: rgba(0, 0, 0, 0.699);
   border-radius: 2rem;
-  -webkit-backface-visibility: hidden;
+  // -webkit-backface-visibility: hidden;
 
   img {
     width: 90%;
@@ -451,7 +451,7 @@ body {
   background: rgba(0, 0, 0, 0.699);
   transform: rotateY(180deg);
   border-radius: 2rem;
-  -webkit-backface-visibility: hidden;
+  // -webkit-backface-visibility: hidden;
 }
 
 .btn-position {

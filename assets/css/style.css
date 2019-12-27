@@ -43,16 +43,20 @@ body {
   font-size: 2rem; }
 
 .navBar {
+  width: 100%;
   display: flex;
   background: #212121;
   color: #fff;
-  width: 100%;
   padding: 1rem 5rem;
   justify-content: flex-end;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 9999; }
+  .navBar::after {
+    content: "";
+    display: table;
+    clear: both; }
   @media only screen and (max-width: 900px) {
     .navBar {
       flex-direction: column;
@@ -85,6 +89,9 @@ body {
     transition: all 0.2s; }
     .navBar p:hover {
       transform: skewY(2deg); }
+    @media only screen and (max-width: 450px) {
+      .navBar p {
+        font-size: 3rem; } }
   .navBar__menu {
     order: 2;
     margin: 0;
@@ -102,6 +109,9 @@ body {
       font-size: 2rem;
       text-decoration: none;
       color: #ffffff; }
+      @media only screen and (max-width: 450px) {
+        .navBar__menu a {
+          font-size: 1.5rem; } }
 
 .btn:link, .btn:visited {
   transition: all 0.2s; }
@@ -145,6 +155,10 @@ body {
   background-size: cover;
   background-attachment: fixed;
   margin-bottom: 1rem; }
+  .intro::after {
+    content: "";
+    display: table;
+    clear: both; }
   @media only screen and (max-width: 1280px) {
     .intro {
       height: 120vh; } }
@@ -226,9 +240,17 @@ body {
     @media only screen and (max-width: 1280px) {
       .about__row {
         margin-top: 10rem; } }
+    @media only screen and (max-width: 650px) {
+      .about__row {
+        flex-direction: column; } }
   .about img {
     height: 25rem;
     padding: 0 3rem 2rem 0; }
+    @media only screen and (max-width: 650px) {
+      .about img {
+        width: auto;
+        max-width: 75rem;
+        margin: 0 auto; } }
   .about p {
     color: #ffffff;
     line-height: 1.4em;

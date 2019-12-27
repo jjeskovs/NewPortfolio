@@ -111,7 +111,8 @@ body {
       color: #ffffff; }
       @media only screen and (max-width: 450px) {
         .navBar__menu a {
-          font-size: 1.5rem; } }
+          font-size: 1.5rem;
+          padding: 0rem 0.5rem; } }
 
 .btn:link, .btn:visited {
   transition: all 0.2s; }

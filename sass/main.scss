@@ -1,6 +1,6 @@
 // all variables will go here
 $font-primary: #ffffff;
-$dark-background: linear-gradient(to right bottom, #0a111b, rgb(14, 13, 13));
+$dark-background: linear-gradient(to right bottom, #0B0A10, #201C29);
 
 @mixin style-link-text($color) {
   text-decoration: none;
@@ -581,9 +581,7 @@ body {
       transform: translate(-50%, -50%);
       // margin-top: 10rem;
   
-      // @media only screen and (max-width: 768px) {
-      //   margin-top: 15rem;
-      // }
+      
   
       a {
         

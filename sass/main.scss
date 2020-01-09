@@ -341,7 +341,7 @@ body {
 
   // clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
 
-  @media only screen and (max-width: 1280px){
+  @media only screen and (max-width: 1440px){
     height: auto;
     padding: 15rem 5rem;
   }
@@ -351,11 +351,11 @@ body {
     flex-direction: row;
     justify-content: center;
     max-width: 114rem;
-    margin-top: 20rem;
+    margin-top: 10rem;
     margin-left: auto;
     margin-right: auto;
 
-    @media only screen and (max-width: 1366px){
+    @media only screen and (max-width: 1440px){
       margin-top: 5rem;
     }
     

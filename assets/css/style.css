@@ -165,6 +165,9 @@ body {
   @media only screen and (max-width: 1280px) {
     .intro {
       height: 120vh; } }
+  @media only screen and (max-width: 375px) {
+    .intro {
+      background: linear-gradient(to right bottom, #0B0A10, #201C29); } }
   .intro p {
     display: block;
     color: #ffffff;
@@ -284,6 +287,9 @@ body {
     .projects {
       height: auto;
       padding: 15rem 0 15rem 0; } }
+  @media only screen and (max-width: 375px) {
+    .projects {
+      background: linear-gradient(to right bottom, #0B0A10, #201C29); } }
 
 .project__row {
   display: flex;
@@ -437,6 +443,12 @@ body {
       display: flex;
       justify-content: center;
       transform: translate(-50%, -50%); }
+      @media only screen and (max-width: 950px) {
+        .footer .contact__links {
+          margin-top: -10rem; } }
+      @media only screen and (max-width: 700px) {
+        .footer .contact__links {
+          margin-top: -20rem; } }
       .footer .contact__links a {
         margin: 2rem;
         text-decoration: none; }
@@ -444,4 +456,5 @@ body {
           height: 5rem; }
           @media only screen and (max-width: 950px) {
             .footer .contact__links a img {
-              height: 4rem; } }
+              height: 4rem;
+              margin-top: -10rem; } }

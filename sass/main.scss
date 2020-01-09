@@ -247,6 +247,10 @@ body {
   @media only screen and (max-width: 1280px){
     height: 120vh;
   }
+  
+  @media only screen and (max-width: 375px){
+    background: $dark-background;
+  }
   p {
     display: block;
     color: $font-primary;
@@ -409,6 +413,10 @@ body {
   @media only screen and (max-width: 1280px){
     height: auto;
     padding: 15rem 0 15rem 0;
+  }
+
+  @media only screen and (max-width: 375px){
+    background: $dark-background;
   }
 }
 
@@ -586,7 +594,15 @@ body {
       justify-content: center;
       transform: translate(-50%, -50%);
       // margin-top: 10rem;
-  
+     
+      @media only screen and (max-width: 950px) {
+        margin-top: -10rem;
+        // top: 80%;
+      }
+      @media only screen and (max-width: 700px) {
+        margin-top: -20rem;
+        // top: 80%;
+      }
       
   
       a {
@@ -600,6 +616,7 @@ body {
   
           @media only screen and (max-width: 950px) {
             height: 4rem;
+            margin-top: -10rem;
             // top: 80%;
           }
         }

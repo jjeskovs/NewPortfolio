@@ -403,7 +403,7 @@ body {
   background: linear-gradient(to right bottom, #0B0A10, #201C29);
   color: #ffffff;
   border-top: 0.8rem solid #4aaaa5; }
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 1366px) {
     .footer {
       height: 100vh; } }
   @media only screen and (max-width: 900px) {
@@ -443,6 +443,9 @@ body {
       display: flex;
       justify-content: center;
       transform: translate(-50%, -50%); }
+      @media only screen and (max-width: 1366px) {
+        .footer .contact__links {
+          margin-top: -5rem; } }
       @media only screen and (max-width: 950px) {
         .footer .contact__links {
           margin-top: -10rem; } }

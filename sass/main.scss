@@ -547,7 +547,7 @@ body {
   border-top: 0.8rem solid #4aaaa5;
   // height: 50rem;
 
-    @media only screen and (max-width: 1024px){
+    @media only screen and (max-width: 1366px){
       height: 100vh;
       // padding: 15  rem 0 15rem 0;
     }
@@ -595,6 +595,10 @@ body {
       transform: translate(-50%, -50%);
       // margin-top: 10rem;
      
+      @media only screen and (max-width: 1366px) {
+        margin-top: -5rem;
+        // top: 80%;
+      }
       @media only screen and (max-width: 950px) {
         margin-top: -10rem;
         // top: 80%;

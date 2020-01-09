@@ -405,7 +405,7 @@ body {
   border-top: 0.8rem solid #4aaaa5; }
   @media only screen and (max-width: 1366px) {
     .footer {
-      height: 100vh; } }
+      height: 105vh; } }
   @media only screen and (max-width: 900px) {
     .footer {
       height: 110vh; } }
